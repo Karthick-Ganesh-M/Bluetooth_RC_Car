@@ -1,0 +1,37 @@
+                                                                RC CAR CONNECTIONS
+ 
+
+                            L298n Motor Driver pins
+ 
+IN1 5 Connected to GPIO 6
+IN2 6 Connected to GPIO 10
+IN3 10 Connected to GPIO 11
+IN4 11 Connected to GPIO 13
++5v of Motor Driver Connected to +5v of Arduino UNO
+Gnd of Motor Driver Connected to Gnd of Arduino UNO
+
+ 
+Speed Range - (0-255)
+Radius of a turn-(0-255) 
+ Note: The robot will malfunction if this is higher than int Speed.
+       1 for the electronic braking system and 0 for normal.
+
+                            HC-05 BLUETOOTH MODULE
+
+RX Connected to TX(1)
+TX Connected to RX(0)
+GND Connected to GND
++5v Connected to +5V
+
+                           Power Supply(Battery Holder)
+
+Connect the positive wire of the battery holder to Vin of Arduino, VCC of L298N, and VCC of HC-05.
+Connect the negative wire of the battery holder to GND of Arduino, GND of L298N, and GND of HC-05.
+
+
+          DC Motors are connected to the OUT pins of the L298N Motor Driver
+
+Motor 1 (Left Front) Connected to OUT1, OUT2
+Motor 2 (Right Front) Connected to OUT3, OUT4
+Motor 3 (Left Back) Connected to OUT5, OUT6
+Motor 4 (Right Back) Connected to OUT7, OUT8
